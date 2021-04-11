@@ -1,0 +1,182 @@
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form__wrapper {
+   position: relative;
+   display: block;
+   cursor: pointer;
+}
+
+
+.modal-form__input {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 42px;
+    cursor: pointer;
+    border: 1px solid rgba(100, 76, 76, 0.2);
+    border-radius: 4px;
+    transition: border-color  250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        border-color: var(--accent-color);
+        outline: none;
+    }
+}
+
+.modal-form__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    display: block;
+    width: 18px ;
+    height: 18px ;
+    fill: black;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal-form__input:focus + & {
+    fill: var(--accent-color);
+    }
+}
+
+.modal-form__icon-name {
+    width: 12px;
+    height: 12px;
+}
+
+.modal-form__icon-phone {
+    width: 13px;
+    height: 13px;
+}
+
+.modal-form__icon-email {
+    width: 15px;
+    height: 12px ;
+}
+
+.modal-form__title {
+    display: block;
+    font-size: 20px;
+    line-height: 1.15;
+    color: #212121;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+}
+
+.modal-form__line-name {
+    display: block;
+    margin-top: 10px; 
+    margin-bottom: 4px ;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+}
+
+.modal-form__line-namef {
+    margin-top: 0px; 
+}
+
+.modal-form__message {
+    width: 100%;
+    height: 120px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 12px 16px;
+
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+    }
+
+    &:focus{
+        border-color: var(--accent-color);
+        outline: none;
+    }
+}
+
+.modal-form__check-description {
+    display:flex;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    &::before {
+        display: block;
+        content: "" ;
+        width: 16px;
+        height: 15px;
+        border: 2px solid #212121;
+        cursor: pointer;
+        margin-right: 8px;
+        margin-top: 4px;
+        border-radius: 2px;
+    
+
+        .modal-form__term:checked + & {
+            
+            background-image: url("../images/modal_form_img/Rectangle 11@2x.svg");
+            background-position: center;
+            background-color: var(--accent-color);
+            border: none;
+        }
+    }
+}
+
+/*.modal-form-term:focus + .modal-form-check-description::before {
+    box-shadow: 0 0 0 2px blue;/
+
+}*/
+
+.modal-form__wrap-agreement {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.modal-form__agreement {
+    display: inline-block;
+    position: relative;
+    color: var(--accent-color);
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-color: var(--accent-color);
+        width: 127px;
+        height: 1px;
+        top: 80%;
+        left: 0%;
+
+    }
+}
+
+.modal-form__btn {
+    min-width: 200px;
+    padding: 10px 32px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-transform:none;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    cursor: pointer;
+}

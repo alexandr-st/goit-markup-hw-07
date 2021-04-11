@@ -1,0 +1,56 @@
+.worth {
+    padding-top: 94px;
+    padding-bottom: 47px;
+}
+
+.worth__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.worth__element {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+}
+
+.worth__description-representation {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: start;
+}
+
+.worth__items {
+    margin-bottom: 10px ;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:var(--secondary-color);
+    text-align: start;
+}
+
+.worth__description {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: start;
+}
+
+.worth__icons-container {
+    display: flex;
+    width: 270px ;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    justify-content: center;
+    align-items: center;
+}
+
+.worth__icons {
+    width: 70px ;
+    height: 70px; 
+}

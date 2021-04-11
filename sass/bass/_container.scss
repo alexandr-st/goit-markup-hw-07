@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.hero,
+.wdwd,
+.team,
+.clients,
+.product {
+   .container { 
+        display: block;
+   }
+}
+    
+.footter {
+    .container {
+        display: flex;
+    }
+}
